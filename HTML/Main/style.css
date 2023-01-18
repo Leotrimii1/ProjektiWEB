@@ -1,45 +1,68 @@
-body{
-    background-image:url(avgg.jpg);
+body {
+    background-image: url(avgg.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
 }
-.box{
-    
-background: linear-gradient(#0039b9, #b12323);
+
+.box {
+
+    background: linear-gradient(#0039b9, #b12323);
     width: 8cm;
     height: 13cm;
     color: white;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: rgba(151, 151, 163, 0.4) 0px 7px 29px 0px;
-    transition:2s;
+    transition: 2s;
 }
-.box:hover{
+.box .hero1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7cm;
+    height: 9cm;
+    border-radius: 6px;
+    transition: 1.5s;
+}
+
+.box:hover {
     width: 10cm;
     height: 15cm;
 }
-.box img{
+.box:hover a{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box .foto {
     width: 4cm;
     height: 1.5cm;
     position: fixed;
     transform: translate(55%, -50%);
     transition: 1s;
 }
-.box  img:hover{
+.box:hover .hero1{
+    width: 8.5cm;
+    height: 11cm;
+}
+
+.box .foto:hover {
     width: 6cm;
     height: 3cm;
 }
-.box a{
+
+.box a {
     color: rgb(0, 0, 0);
     position: relative;
-    top:12cm;
+    top: 12cm;
     left: 40%;
     background-color: white;
     border-radius: 4px;
@@ -47,119 +70,129 @@ background: linear-gradient(#0039b9, #b12323);
     opacity: 85%;
     text-decoration: none;
 }
-.rightbox{
-background: linear-gradient(#0039b9, #b12323);
-        width: 8cm;
-        height: 12cm;
-        color: white;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(45%, -50%);
-        border-radius: 10px;
-        box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-        z-index: -1;
-        transition: 1s;
-    }
-    .rightbox:hover {
-        width: 10cm;
-        height: 15cm;
-       
-    }
-    
-    .rightbox:hover a{
-        position: relative;
-    top: 5cm;
-    left: -35%;
-    }
-    .rightbox img{
-        width: 4cm;
-        height: 1.5cm;
-        position: fixed;
-        transform: translate(55%, -50%);
-        transition: 1s;
-    }
-    .rightbox a{
-        color: rgb(0, 0, 0);
-        position: relative;
-        top: 3cm;
-        left: 20%;
-        opacity: 85%;
-        transition: 1s;
-        background-color: white;
+
+.rightbox {
+    background: linear-gradient(#0039b9, #b12323);
+    width: 8cm;
+    height: 12cm;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(45%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    z-index: -1;
+    transition: 1.5s;
+}
+
+.rightbox:hover {
+    width: 10cm;
+    height: 15cm;
+
+}
+
+.rightbox:hover a {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rightbox .foto1 {
+    width: 4cm;
+    height: 1.5cm;
+    position: absolute;
+    transform: translate(55%, -50%);
+    transition: 2s;
+}
+
+.rightbox a {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 85%;
+    transition: 1.5s;
+    background-color: white;
     border-radius: 4px;
     padding: 2%;
     text-decoration: none;
-    }
-    .leftbox{
-        background: linear-gradient(#0039b9, #b12323);
-        width: 8cm;
-        height: 12cm;
-        color: white;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-145%, -50%);
-        border-radius: 10px;
-        box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-        z-index: -1;
-        transition: 1s;
-    }
-    .leftbox:hover{
-        width: 10cm;
-        height: 15cm;
-    }
-    .leftbox a{
-        color: rgb(0, 0, 0);
-        position: relative;
-        top: 11cm;
-        left: 30%;
-        opacity: 85%;
-        text-decoration: none;
-        transition: 1s;
-        background-color: white;
+}
+
+.leftbox {
+    background: linear-gradient(#0039b9, #b12323);
+    width: 8cm;
+    height: 12cm;
+    color: white;
+    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145%, -50%);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.leftbox:hover {
+    width: 10cm;
+    height: 15cm;
+}
+
+.leftbox a {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 11cm;
+    left: 30%;
+    opacity: 85%;
+    text-decoration: none;
+    transition: 1s;
+    background-color: white;
     border-radius: 4px;
     padding: 2%;
-    }
-    .leftbox img{
-        width: 4cm;
-        height: 1.5cm;
-        position: fixed;
-        transform: translate(50%, -50%);
-        transition: 2s;
-    }
-    .leftbox:hover a{
-        position: relative;
+}
+
+.leftbox img {
+    width: 4cm;
+    height: 1.5cm;
+    position: fixed;
+    transform: translate(50%, -50%);
+    transition: 2s;
+}
+
+.leftbox:hover a {
+    position: relative;
     top: 13cm;
     left: 41%;
-    }
-    .leftbox:hover img{
-        
-    left: 10%;
-    }
-    .box:hover img{
-        left: 5%;
-    }
-    .rightbox:hover img{
-        left: 10%;
-    }
+}
 
-    .rightbox .hero1{
-        width: 6.5cm;
-        height: 8cm;
-        position: relative;
-        top: 5.5cm;
-        right: 2.5cm;
-        transition:all 1s;
-        border-radius: 8px;
-        margin-bottom: 0px;
-    }
-  .rightbox:hover .hero1{
-        width: 7.5cm;
-        height: 9cm;
-        position: relative;
-        left: -2.7cm;
-        display: block;
-    }
+.leftbox:hover img {
+
+    left: 10%;
+}
+
+.rightbox:hover .foto1 {
+    left: 10%;
+}
+
+.rightbox .hero1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.5cm;
+    height: 8cm;
+    transition: all 1s;
+    border-radius: 8px;
+    margin-bottom: 0px;
+}
+
+.rightbox:hover .hero1 {
+    width: 7.5cm;
+    height: 9cm;
+    position: relative;
+    left: 5cm;
+}
