@@ -1,0 +1,38 @@
+body{
+    background-image:url(avgg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+ul{
+    list-style-type: none;
+}
+ul li img{
+    width: 8cm;
+    height: 4.2cm;
+}
+.wanda{
+    width: 25cm;
+    height: 18cm;
+    color: white;
+    background-color:rgba(255, 0, 0, 0.4);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-30%, -67%);
+    border-radius: 10px;
+    padding: 2%;
+    white-space: pre-line;
+}
+.wanda pre{
+    white-space: pre-line;
+    font-family: sans-serif;
+    opacity: 85%;
+}
+.wanda h1{
+    text-decoration: underline;
+    opacity: 85%;
+}
