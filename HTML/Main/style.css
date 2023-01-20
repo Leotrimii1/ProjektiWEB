@@ -4,7 +4,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 .box {
@@ -23,10 +22,10 @@ body {
 }
 .box .hero1{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 7cm;
+    width: 7.5cm;
     height: 9cm;
     border-radius: 6px;
     transition: 1.5s;
@@ -48,15 +47,21 @@ body {
     position: fixed;
     transform: translate(55%, -50%);
     transition: 1s;
+    border-radius: 6px;
 }
 .box:hover .hero1{
-    width: 8.5cm;
+    width: 9cm;
     height: 11cm;
 }
 
-.box .foto:hover {
+/* .box .foto:hover {
     width: 6cm;
     height: 3cm;
+} */
+.box:hover .foto{
+    position: absolute;
+    left: 1cm;
+    
 }
 
 .box a {
@@ -105,12 +110,13 @@ body {
     position: absolute;
     transform: translate(55%, -50%);
     transition: 2s;
+    border-radius: 6px;
 }
 
 .rightbox a {
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 90%;
+    top: 93%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 85%;
@@ -195,4 +201,27 @@ body {
     height: 9cm;
     position: relative;
     left: 5cm;
+}
+.leftbox .foto2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7cm;
+    height: 7.5cm;
+    transition: all 1s;
+    border-radius: 8px;
+    margin-bottom: 0px;
+    border-radius: 6px;
+}
+.leftbox .leftfoto{
+    border-radius: 6px;
+}
+.leftbox:hover .foto2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9cm;
+    height: 8cm;
 }
